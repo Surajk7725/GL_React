@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const SignupPage = () => {
+const Signup = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     fullName: '',
     username: '',
@@ -82,20 +84,16 @@ const SignupPage = () => {
               onChange={handleChange}
               required
             />
-            <div className="flex justify-end mt-2">
-              <button
-                type="button"
-                onClick={() => console.log('Redirect to login')}
-                className="text-blue-500 hover:text-blue-700 underline"
-              >
-                Already have an account? Login
-              </button>
+           <div className="text-center mt-4">
+            <span className="text-sm">Already have an account? </span>
+            <a onClick={() => navigate('/login')} className="text-blue-500 hover:text-blue-800 cursor-pointer">Log In</a>
             </div>
           </div>
           <div className="flex items-center justify-center mt-4">
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
+              onClick={() => navigate('/login')}
             >
               Sign Up
             </button>
@@ -106,4 +104,4 @@ const SignupPage = () => {
   );
 };
 
-export default SignupPage;
+export default Signup;

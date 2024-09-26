@@ -6,9 +6,16 @@ const Landing = () => {
     <>
       <Navbar />
       {/* Main Landing Section */}
-      <div className="bg-cover bg-center h-screen" style={{ backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRrXCH7G5D2WgI8IJWWmNO9nmkXoKqvpDz8GfjRFsDcG-phH3wH2Ifwg9G5eqGaqICHCw&usqp=CAU')` }}>
-        <div className="flex items-center justify-center h-full bg-black bg-opacity-50">
-          <h1 className="text-white text-5xl font-bold animation-slideIn">Welcome to CodeMetrics</h1>
+      <div
+        className="bg-cover bg-center h-screen"
+        style={{
+          backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRrXCH7G5D2WgI8IJWWmNO9nmkXoKqvpDz8GfjRFsDcG-phH3wH2Ifwg9G5eqGaqICHCw&usqp=CAU')`,
+        }}
+      >
+        <div className="flex flex-col items-center justify-center h-full bg-black bg-opacity-50 text-center px-4">
+          <h1 className="text-white text-5xl font-bold animation-slideIn">
+            Welcome to CodeMetrics
+          </h1>
           {/* Add description below the heading */}
           <p className="text-white text-xl mt-6 max-w-2xl">
             CodeMetrics is your personalized platform for analyzing GitHub and LeetCode profiles, providing deep insights into your coding progress, skills, and overall performance. We help you sharpen your problem-solving abilities and boost your development workflow.
@@ -17,7 +24,12 @@ const Landing = () => {
       </div>
 
       {/* Our Achievements Section with Background Image */}
-      <section className="py-20 bg-cover bg-center" style={{ backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgVbsxa8ysqAX1W38t7Fw8FVKjZzr8NBrq5KhQY3Np483av7LZax_ykoquh1oS1VCDQlY&usqp=CAU')` }}>
+      <section
+        className="py-20 bg-cover bg-center"
+        style={{
+          backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgVbsxa8ysqAX1W38t7Fw8FVKjZzr8NBrq5KhQY3Np483av7LZax_ykoquh1oS1VCDQlY&usqp=CAU')`,
+        }}
+      >
         <h2 className="text-4xl font-bold text-center text-white">Our Achievements</h2>
         <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {/* Achievement 1 with Image */}
@@ -28,7 +40,9 @@ const Landing = () => {
               className="w-full h-48 object-cover rounded-md"
             />
             <h3 className="text-2xl font-semibold mt-4">Github</h3>
-            <p className="mt-2">GitHub is a platform for hosting and collaborating on code, enabling developers to work together on projects, track changes, and manage version control using Git. It also provides tools for automating workflows, reviewing code, and managing open-source contributions.</p>
+            <p className="mt-2">
+              GitHub is a platform for hosting and collaborating on code, enabling developers to work together on projects, track changes, and manage version control using Git. It also provides tools for automating workflows, reviewing code, and managing open-source contributions.
+            </p>
           </div>
           {/* Achievement 2 with Image */}
           <div className="shadow-lg p-6 bg-white bg-opacity-70">
@@ -39,7 +53,8 @@ const Landing = () => {
             />
             <h3 className="text-2xl font-semibold mt-4">Leetcode</h3>
             <p className="mt-2">
-            LeetCode is an online platform that offers coding challenges to help developers improve their problem-solving skills. It also provides mock interviews, contest environments, and a wide variety of algorithmic problems, making it popular for technical interview preparation</p>
+              LeetCode is an online platform that offers coding challenges to help developers improve their problem-solving skills. It also provides mock interviews, contest environments, and a wide variety of algorithmic problems, making it popular for technical interview preparation.
+            </p>
           </div>
           {/* Achievement 3 with Image */}
           <div className="shadow-lg p-6 bg-white bg-opacity-70">
@@ -49,7 +64,9 @@ const Landing = () => {
               className="w-full h-48 object-cover rounded-md"
             />
             <h3 className="text-2xl font-semibold mt-4">Performance Tracker</h3>
-            <p className="mt-2">A performance tracker monitors and evaluates a user's progress over time, offering insights into their efficiency, strengths, and areas for improvement. It provides detailed metrics to help users track goals, identify patterns, and optimize their performance.</p>
+            <p className="mt-2">
+              A performance tracker monitors and evaluates a user's progress over time, offering insights into their efficiency, strengths, and areas for improvement. It provides detailed metrics to help users track goals, identify patterns, and optimize their performance.
+            </p>
           </div>
         </div>
       </section>
@@ -61,9 +78,6 @@ const Landing = () => {
           <p className="mt-2">&copy; 2024 CodeMetrics. All rights reserved.</p>
         </div>
       </footer>
-
-      
-      
     </>
   );
 };
